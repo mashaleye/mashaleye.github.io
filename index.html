@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoinUp</title>
+  <link rel="icon" href="handshake.svg" type="image/svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <nav class="navi">
+          <a href="index.html" class="nav-item">Home</a>
+          <a href="personage.png" target="_blank" class="nav-item">Personas</a>
+          <a href="scenario.png" target="_blank" class="nav-item">Scenarios</a>
+          <a href="Moodboard.jpg" target="_blank" class="nav-item">Moodboard</a>
+          <a href="JoinUpStoryboard.png" target="_blank" class="nav-item">Storyboard</a>
+          <a href="#" class="nav-item">Flowcharts</a>
+          <a href="#" class="nav-item">Wireframe</a>
+          <a href="#" class="nav-item">GUI</a>
+          <a href="#" class="nav-item">Bibliography</a>
+        </nav>
+      </div>
+      
+  <div class="container">
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+      <h2>JoinUp</h2>
+      <nav>
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">Explore</a>
+        <a href="#" class="nav-item">Inbox</a>
+        <a href="#" class="nav-item">Communities</a>
+        <a href="#" class="nav-item">Profile</a>
+      </nav>
+      <button id="create-event-button" class="create-event-btn">Create an Event</button>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+      <div class="card" id="event-card">
+        <img id="event-image" src="/animalShelter.png" alt="Event Image">
+        <div class="card-content">
+          <h2 id="event-title">Event Title</h2>
+          <p id="event-description">Event Description</p>
+          <p>Date: <span id="event-date"></span></p>
+          <p>Time: <span id="event-time"></span></p>
+          <p>Attendees: <span id="event-attendees"></span></p>
+          <p>Organizer: <span id="event-organizer"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Sidebar -->
+<div class="sidebar">
+    <input type="text" class="search-bar" placeholder="Search">
+    <h3>Friends</h3>
+    <div class="friend-list">
+      <div class="friend-item">Mojeed</div>
+      <div class="friend-item">Jaime</div>
+      <div class="friend-item">Rehan</div>
+      <div class="friend-item">John</div>
+    </div>
+    <h3>Your Events</h3>
+    <div class="user-event" id="your-events-list">
+      <!-- Events will be added here -->
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
