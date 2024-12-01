@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: linear-gradient(#3dbbb5, black);
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  .sidebar {
+    width: 400px;
+    padding: 40px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .nav-item {
+    margin: 10px 0;
+    color: #a0aec0;
+    text-decoration: none;
+    display: block;
+  }
+  .create-event-btn {
+    background-color: #38b2ac;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .card {
+    width: 400px;
+    background-image: linear-gradient(#38b2ac, black);
+    border-color: white;
+    border-radius: 10px;
+    border-width: 2px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    border-style: solid;
+  }
+
+  .card.swipe-left {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  .card.swipe-right {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+  .card.reset {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .card-content {
+    padding: 20px;
+  }
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #4a5568;
+    border: none;
+    color: #a0aec0;
+    margin-bottom: 20px;
+  }
+  .friend-list, .user-event {
+    margin: 10px 0;
+  }
+  .friend-item {
+    background-color: #4a5568;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+  }
+  .user-event {
+    margin: 10px 0;
+    color: #a0aec0;
+  }
+  .user-event-item {
+    background-color: #4a5568;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+  }
+  
+  .navi {
+    display: flex;
+    justify-content: space-evenly; /* Centers the links horizontally */
+    gap: 25px; /* Adds space between each link */
+    background-color: black; /* Optional: background color for the navbar */
+    padding: 10px; /* Optional: padding around the navbar */
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-item:hover {
+    color: #38b2ac; /* Optional: color change on hover */
+  }
+
+  .contain {
+    display:flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap:10px;
+  }
+  
+  
