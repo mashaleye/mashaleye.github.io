@@ -116,12 +116,24 @@ const cards = [
   }
   
   function swipeLeft() {
+    // Remove the current card from the cards array
+    cards.splice(currentCardIndex, 1);
+  
+    // If the cards array is empty, reset the display and exit
+    if (cards.length === 0) {
+      eventCard.innerHTML = '<p>No more events to display. Refresh the page or click F5</p>';
+      return;
+    }
+  
+    // Perform the swipe animation
     eventCard.classList.add('swipe-left');
     setTimeout(() => {
-      currentCardIndex = (currentCardIndex + 1) % cards.length;
+      // Adjust the index to ensure it stays within bounds
+      currentCardIndex = currentCardIndex % cards.length;
       updateCard();
     }, 500);
   }
+  
   
   function swipeRight() {
     // Add current card to "Your Events" list

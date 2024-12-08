@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Page</title>
+  <link rel="stylesheet" href="communityPageStyles.css">
+</head>
+<body>
+  <section id="community-page">
+    <h1>Communities & Events</h1>
+    
+    <!-- Filters -->
+    <div id="filters">
+      <select id="location-filter">
+        <option value="">All Locations</option>
+        <option value="City A">City A</option>
+        <option value="City B">City B</option>
+        <option value="City C">City C</option>
+      </select>
+      
+      <select id="type-filter">
+        <option value="">All Types</option>
+        <option value="Cleanup">Cleanup</option>
+        <option value="Planting">Planting</option>
+        <option value="Workshop">Workshop</option>
+      </select>
+    </div>
+    
+    <!-- Events Grid -->
+    <div id="events-grid"></div>
+  </section>
+
+  <script src="communityPageLogic.js"></script>
+</body>
+</html>
